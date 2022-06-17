@@ -1,0 +1,30 @@
+###
+get http://localhost:5000/admin
+Authorization: Bearer eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTU0Njc1OTIsImV4cCI6MTY1NTU1Mzk5MiwiYXVkIjoiNjJhYzYzNTkzZTU0NTY4NThjMWFmYTg3IiwiaXNzIjoid2VibW9iIn0.xba9fJvXBvxU2Kgbvq7rkytQ00Qv5ewznIc70AVh8UE
+
+
+###
+get http://localhost:5000/users
+
+### post a user
+post http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name":"Rajeev Kumar",
+    "email":"rajeev7@gmail.com",
+    "password":"12345",
+    "role":"USER"
+
+}
+
+### post login route
+post http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"rajeev@gmail.com",
+    "password":"12345"
+}
+
+
